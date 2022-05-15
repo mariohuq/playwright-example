@@ -1,0 +1,25 @@
+# Ignore everything
+*
+
+# But not Java files...
+!.gitignore
+!*.java
+
+# And not maven stuff
+!pom.xml
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# And CI
+!.travis.yml
+!LICENSE
+!README.md
+!.circleci/*
+!.codeclimate.yml
+!checkstyle.xml
+!.lgtm.yml
+!.github/**
+
+# ...even if they are in subdirectories
+!*/
