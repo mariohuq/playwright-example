@@ -6,11 +6,6 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.TestInfo;
 
-import java.nio.file.Paths;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-
 public abstract class PlayWrightTest {
 
     public static final String BASE_URL = "http://0.0.0.0:8000/playwright.html";
@@ -42,8 +37,6 @@ public abstract class PlayWrightTest {
     private BrowserContext context;
 
     private Playwright playwright;
-
-    private static final long startTime = System.currentTimeMillis();
 
     public void setup(BrowserName browserName, ClientType clientType) {
         playwright = Playwright.create();
